@@ -304,6 +304,10 @@
 %       would be \stackoverflow{123456}{sam-smith}
 \newcommand*{\stackoverflow}[2]{\def\@stackoverflowid{#1}\def\@stackoverflowname{#2}}
 
+% Defines writer's stackexchange profile (optional)
+% Usage: \stackexchange{<se userid>}{<se username>}
+\newcommand*{\stackexchange}[2]{\def\@stackexchangeid{#1}\def\@stackexchangename{#2}}
+
 % Defines writer's linked-in (optional)
 % Usage: \linkedin{<linked-in-nick>}
 \newcommand*{\linkedin}[1]{\def\@linkedin{#1}}
@@ -437,6 +441,12 @@
         {%
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
           \href{https://github.com/\@github}{\faGithubSquare\acvHeaderIconSep\@github}%
+        }%
+      \ifthenelse{\isundefined{\@stackexchangeid}}%
+        {}%
+        {%
+          \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
+          \href{http://stackexchange.com/users/\@stackexchangeid}{\faStackExchange\acvHeaderIconSep\@stackexchangename}%
         }%
       \ifthenelse{\isundefined{\@stackoverflowid}}%
         {}%
