@@ -306,7 +306,7 @@
 
 % Defines writer's stackexchange profile (optional)
 % Usage: \stackexchange{<se userid>}{<se username>}
-\newcommand*{\stackexchange}[2]{\def\@stackexchangeid{#1}\def\@stackexchangename{#2}}
+\newcommand*{\mathoverflow}[2]{\def\@mathoverflowid{#1}\def\@mathoverflowname{#2}}
 
 % Defines writer's linked-in (optional)
 % Usage: \linkedin{<linked-in-nick>}
@@ -442,11 +442,11 @@
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
           \href{https://github.com/\@github}{\faGithubSquare\acvHeaderIconSep\@github}%
         }%
-      \ifthenelse{\isundefined{\@stackexchangeid}}%
+      \ifthenelse{\isundefined{\@mathoverflowid}}%
         {}%
         {%
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-          \href{http://stackexchange.com/users/\@stackexchangeid}{\faStackExchange\acvHeaderIconSep\@stackexchangename}%
+          \href{https://mathoverflow.net/users/\@mathoverflowid}{\faStackExchange\acvHeaderIconSep\@mathoverflowname}%
         }%
       \ifthenelse{\isundefined{\@stackoverflowid}}%
         {}%
