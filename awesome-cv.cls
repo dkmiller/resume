@@ -458,7 +458,7 @@
         {}%
         {%
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-          \href{https://www.linkedin.com/in/\@linkedin}{\faLinkedinSquare\acvHeaderIconSep linkedin.com/in/\@linkedin}%
+          \href{https://www.linkedin.com/in/\@linkedin}{\faLinkedinSquare\acvHeaderIconSep linkedin.com/in/\@linkedin/}%
         }%
       \ifthenelse{\isundefined{\@twitter}}%
         {}%
