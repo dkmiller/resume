@@ -85,6 +85,7 @@
   pdfsubject={},
   pdfkeywords={}
 }
+\RequirePackage{setspace}
 
 
 %-------------------------------------------------------------------------------
@@ -212,7 +213,7 @@
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{black} #1}}
 \newcommand*{\sectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{awesome} #1}}
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{black}{#1}}}
-\newcommand*{\paragraphstyle}{\fontsize{11pt}{1em}\bodyfontlight\upshape\color{black}}
+\newcommand*{\paragraphstyle}{\fontsize{11pt}{1em}\bodyfontlight\upshape\color{black}\setstretch{1.03}}
 
 % For elements of entry
 \newcommand*{\entrytitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{black} #1}}
@@ -610,7 +611,7 @@
   \vspace{-4.0mm}
   \begin{justify}
   \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
-    \setlength{\parskip}{2pt}
+    \setlength{\parskip}{3pt}
     \renewcommand{\labelitemi}{\bullet}
 }{%
   \end{itemize}
