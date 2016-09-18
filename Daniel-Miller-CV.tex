@@ -1,216 +1,287 @@
-\documentclass[11pt,a4paper]{moderncv}
-\moderncvtheme{classic}
-\moderncvcolor{blue}
+%!TEX TS-program = xelatex
 
-\usepackage[scale=0.75]{geometry}
+\documentclass[11pt, letterpaper]{awesome-cv}
+\geometry{
+	left     = 1.4cm,
+	top      = 1.4cm,
+	right    = 1.4cm,
+	bottom   = 1.4cm,
+	footskip = 0.5cm
+}
+\fontdir[fonts/]
 
-\firstname{Daniel}
-\familyname{Miller}
-\address{120 Malott Hall, Cornell University}{Ithaca, NY 14853}
-\mobile{(402)~512-4475}
+% Color for highlights
+\colorlet{awesome}{black}
+
+\name{}{DANIEL MILLER}
+\mobile{(+1) 402.512.4475} 
 \email{daniel.keegan.miller@gmail.com}
-\social[github]{dkmiller}
-\social[linkedin]{daniel-miller}
-\homepage{www.math.cornell.edu/\string~dkmiller}
+\homepage{www.math.cornell.edu/\textasciitilde dkmiller}
 
 \begin{document}
-\makecvtitle
+\makecvheader
 
 
 
 
 
-\section{Research interests}
+\cvsection{Research interests}
 
-I study the statistics of Frobenius elements coming from curves of genus one or 
-two. I am especially interested in the conjectured distribution of these 
-Frobenius elements, rate of convergence to the conjectured Sato--Tate 
-distribution, and the interactions of these with the analytic behavior of 
-``curious $L$-functions'' coming from almost-everywhere continuous functions 
-on the space of conjugacy classes of the associated Sato--Tate group. 
-
-
-
-
-
-\section{Education}
-
-\cventry{2012--2017}{Ph.D.~candidate in Mathematics}{Cornell University}{}{}{}
-\cventry{2015--2017}{M.S.~in Computer Science}{Cornell University}{}{}{}
-
-\cventry{2009--2012}{Bachelor of Science}{University of Nebraska at Omaha}{}{4.0 GPA}{}
-\cvlistitem{Highest honors in Mathematics}
-\cvlistitem{Minor in Computer Science}
+\begin{cvparagraph}
+Statistics on compact Lie groups and its connections to the analytic properties 
+of Dirichlet series. The recently-proved Sato--Tate Conjecture predicts the 
+distribution of the set of Frobenius eigenvalues of an elliptic curve, but not 
+the rate at which the set of Frobenii converges to the predicted distribution. 
+I am working on providing strong computational evidence for a stronger 
+conjecture, due to Akiyama--Tanigawa, that predicts this rate of convergence.
+This involves creating and implementing new algorithms for computing the 
+discrepancy of large sequences of points in low dimensions. 
+I am also linking their conjecture to the analytic properties of Dirichlet 
+series that can be constructed from arbitrary equidistributed sequences in 
+compact Lie groups. This involves using Diophantine approximation to construct 
+sequences with slowly decaying discrepancy, but very small exponential sums. 
+\end{cvparagraph}
 
 
 
 
 
-\nocite{*}
-\bibliographystyle{plain}
-\bibliography{CV-sources}
+\cvsection{Education}
+
+\begin{cventries}
+
+\cventry
+	{Ph.D.~in Mathematics, Cornell University}
+	{}{}
+	{August 2012--May 2017}
+	{
+		\begin{cvitems}
+			\item{Dissertation topic: Discrepancy on compact Lie groups, Dirichlet series, and the strong Sato--Tate conjecture}
+			\item{Adviser: Ravi Ramakrishna}
+			\item{Won the Eleanor Norton York Award for excellent collaboration and rapid research progress.}
+		\end{cvitems}
+	}
+	
+\cventry
+	{M.S.~in Computer Science, Cornell University}
+	{}{}
+	{August 2015--May 2017}
+	{
+		\begin{cvitems}
+			\item{Managed the creation of a location-centric auction site written in C\# and hosted on Azure.}
+			\item{Collaborated in writing a CPU scheduler and gossip-based networking protocol in C.}
+		\end{cvitems}
+	}
+	
+\cventry
+	{B.S.~in Mathematics, University of Nebraska Omaha}
+	{}{}
+	{August 2009--August 2012}
+	{
+		\begin{cvitems}
+			\item{Minored in Computer Science, graduated \emph{summa cum laude}, GPA 4.0.}
+			\item{Dean's List all semesters, Highest Honors in Mathematics, with senior thesis.}
+		\end{cvitems}
+	}
+	
+\end{cventries}
 
 
 
 
 
-\section{Conference talks}
 
-\cvline
-  {April 2013}
-  {\emph{Modular curves of infinite level [after Jared Weinstein]},
-  Upstate New York Number Theory Conference,
-  Binghamton University}
-  
-\cvline
-  {May 2013}
-  {\emph{Perfectoid spaces},
-  Ramification and Hopf--Galois module theory,
-  University of Nebraska at Omaha}
-  
-\cvline
-  {April 2014}
-  {\emph{Average ranks of Selmer groups and maximal isotropic subspaces [after Bjorn Poonen]},
-  Upstate New York Number Theory Conference,
-  University at Buffalo}
-  
-\section{Other talks}
+\cvsection{Publications}
 
-\cvline
-  {November 2012}
-  {\emph{Algebraic topology in positive characteristic},
-  Olivetti Club,
-  Cornell University}
-  
-\cvline
-  {January 2013}
-  {\emph{Taniyama-Shimura, the $R=\mathbf{T}$ theorem and Fermat-Wiles},
-  Number Theory Seminar,
-  Cornell University}
-  
-\cvline
-  {April 2013}
-  {\emph{Towards perfectoid spaces},
-  Number Theory Seminar,
-  Cornell University}
-  
-\cvline
-  {April 2013}
-  {\emph{A bestiary of Frobenii},
-  Olivetti Club,
-  Cornell University}
+\begin{cvparagraph}
+Casey Kelleher, Daniel Miller, Trenton Osborn, and Anthony Weston. \href{http://dx.doi.org/10.1016/j.topol.2011.11.041}{\emph{Strongly non-embeddable metric spaces}}. Topology Appl.~\textbf{159} (2012), no.3, 749--755.
 
-\cvline
-  {July 2013}
-  {\emph{Sheaves and forcing},
-  Informal logic seminar,
-  Cornell University}
-  
-\cvline
-  {September 2013}
-  {\emph{The Weil Conjectures for dummies},
-  Number Theory Seminar,
-  Cornell University}
-  
-\cvline
-  {November 2013}
-  {\emph{Taniyama-Shimura revisited},
-  Number Theory Seminar,
-  Cornell University}
-  
-\cvline
-  {January 2014}
-  {\emph{$L$-functions and equidistribution in number theory},
-  Olivetti Club,
-  Cornell University}
-
-\cvline
-  {February 2014}
-  {\emph{Perfectoid spaces I: history and motivation},
-  Number Theory Seminar,
-  Cornell University}
-
-\cvline
-  {March 2014}
-  {\emph{Perfectoid spaces II: recent applications},
-  Number Theory Seminar,
-  Cornell University}
-  
-\cvline
-  {August 2014}
-  {\emph{Automorphic representations and deformation theory in arithmetic geometry},
-  Informal seminar on knots and primes,
-  Cornell University}
-  
-\cvline
-  {September 2014}
-  {\emph{A brief tour of Grothendieck-Teichm\"uller theory},
-  Olivetti Club,
-  Cornell University}
-  
-\cvline
-  {November 2014}
-  {\emph{Local Langlands for $\mathrm{GL}(n)$ over $p$-adic fields [after Peter Scholze]},
-  Number Theory Seminar,
-  Cornell University}
-  
-\cvline
-  {February 2015}
-  {\emph{($p$-adic) Hodge theory and period rings},
-  Olivetti Club,
-  Cornell University}
-  
-\cvline
-  {September 2015}
-  {\emph{Torsion in the cohomology of arithmetic groups},
-  Olivetti Club,
-  Cornell University}
+Casey Kelleher, Daniel Miller, Trenton Osborn, and Anthony Weston. \href{http://dx.doi.org/10.1016/j.jmaa.2014.01.063}{\emph{Polygonal equalities and virtual degeneracy in L\textsubscript{p} spaces}}. J.~Math.~Anal.~Appl.~\textbf{415} (2014), no.1, 247--268.
+\end{cvparagraph}
 
 
 
 
 
-\section{Teaching experience}
+\cvsection{Conference talks}
 
-\cvline{Fall 2013}{Teaching assistant for MATH 1220: Honors Calculus II}
-\cvline{Spring 2014}{Teaching assistant for MATH 2220: Multivariable Calculus}
-\cvline{Fall 2014}{Teaching assistant for MATH 1220: Honors Calculus II}
-\cvline{Spring 2015}{Grader for MATH 6320: Graduate Algebra II}
-\cvline{Fall 2015}{Grader for MATH 6310: Graduate Algebra I}
-\cvline{Spring 2016}{Czar's assistant for MATH 1110/1120: Calculus I/II}
-
-
-
-
-
-\section{Graduate coursework}
-
-\cvlistdoubleitem{Algebraic Number Theory}{Non-Archimedean Geometry}
-\cvlistdoubleitem{Algebra I \& II}{Operating Systems}
-\cvlistdoubleitem{Algebraic Geometry}{Toric Varieties}
-\cvlistdoubleitem{Algebraic Topology I}{Perverse Sheaves}
-\cvlistdoubleitem{Arithmetic of Curves}{Ranks of Elliptic Curves}
-\cvlistdoubleitem{Automorphic Forms}{Real Analysis}
-\cvlistdoubleitem{Cloud Computing}{Smooth Manifolds}
-\cvlistdoubleitem{Commutative Algebra}{Homological Algebra}
-\cvlistdoubleitem{Lie Algebras}{Linear Algebraic Groups}
+\begin{cvhonors}
+	\cvhonor
+	{2013}
+	{Modular curves of infinite level [after Jared Weinstein]}
+	{SUNY Binghamton}
+	
+	\cvhonor
+	{2013}
+	{Perfectoid spaces}
+	{University of Nebraska}
+	
+	\cvhonor
+	{2014}
+	{Average ranks of Selmer groups and maximal isotropic subspaces [after Bjorn Poonen]}
+	{SUNY Buffalo}
+\end{cvhonors}
 
 
 
 
 
-\section{Relevant skills}
+\cvsection{Teaching experience}
 
-\cvline{Languages}{English, (mathematical) French}
-\cvline{Programming}{C, C\#, Java, \TeX, Python}
+\begin{cvhonors}
+	\cvhonor
+	{2013}
+	{Teaching assistant for MATH 1220: Honors Calculus II}
+	{}
+	
+	\cvhonor
+	{2014}
+	{Teaching assistant for MATH 2220: Multivariable Calculus}
+	{}
+	
+	\cvhonor
+	{2014}
+	{Teaching assistant for MATH 1220: Honors Calculus II}
+	{}
+	
+	\cvhonor
+	{2015}
+	{Grader for MATH 6320: Graduate Algebra II}
+	{}
+	
+	\cvhonor
+	{2015}
+	{Grader for MATH 6310: Graduate Algebra I}
+	{}
+	
+	\cvhonor
+	{2016}
+	{Czar's assistant for MATH 1110/1120: Calculus I/II}
+	{}
+	
+	\cvhonor
+	{2016}
+	{Grader for MATH 3040: ``Prove it!''}
+	{}
+\end{cvhonors}
 
 
 
 
 
-\section{Reference}
+\cvsection{Other talks}
 
-\cvline{}{\textbf{Ravi Ramakrishna}, Professor of Mathematics, Cornell University, (607)~257~6972, \href{mailto:ravi@math.cornell.edu}{\nolinkurl{ravi@math.cornell.edu}}}
+\begin{cvhonors}
+	\cvhonor
+	{2012}
+	{Algebraic topology in positive characteristic}
+	{Cornell University}
+	
+	\cvhonor
+	{2013}
+	{Taniyama-Shimura, the \emph{R} = \textbf{T} theorem and Fermat--Wiles}
+	{Cornell University}
+	
+	\cvhonor
+	{2013}
+	{Towards perfectoid spaces}
+	{Cornell University}
+	
+	\cvhonor
+	{2013}
+	{A bestiary of Frobenii}
+	{Cornell University}
+	
+	\cvhonor
+	{2013}
+	{Sheaves and forcing}
+	{Cornell University}
+	
+	\cvhonor
+	{2013}
+	{The Weil Conjectures for dummies}
+	{Cornell University}
+	
+	\cvhonor
+	{2013}
+	{Taniyama--Shimura revisited}
+	{Cornell University}
+	
+	\cvhonor
+	{2014}
+	{\emph{L}-functions and equidistribution in number theory}
+	{Cornell University}
+	
+	\cvhonor
+	{2014}
+	{Perfectoid spaces I: history and motivation}
+	{Cornell University}
+	
+	\cvhonor
+	{2014}
+	{Perfectoid spaces II: recent applications}
+	{Cornell University}
+	
+	\cvhonor
+	{2014}
+	{Automorphic representations and deformation theory in arithmetic geometry}
+	{Cornell University}
+
+	\cvhonor
+	{2014}
+	{A brief tour of Grothendieck--Teichm\"uller theory}
+	{Cornell University}
+	
+	\cvhonor
+	{2014}
+	{Local Langlands for GL(\emph{n}) over \emph{p}-adic fields [after Peter Scholze]}
+	{Cornell University}
+	
+	\cvhonor
+	{2015}
+	{(\emph{p}-adic) Hodge theory and period rings}
+	{Cornell University}
+	
+	\cvhonor
+	{2015}
+	{Torsion in the cohomology of arithmetic groups}
+	{Cornell University}
+\end{cvhonors}
+
+
+
+
+
+\cvsection{Graduate Coursework}
+
+\begin{cvparagraph}
+Algebraic number theory, Algebra I\&II, Algebraic geometry, Algebraic topology, 
+Arithmetic of curves, Automorphic forms, Cloud computing, Commutative algebra, 
+Lie algebras, Non-Archimedean geometry, Toric varieties, Perverse sheaves, 
+Ranks of elliptic curves, Real analysis, Smooth manifolds, Homological algebra, 
+Linear algebraic groups, Principles of distributed systems.
+\end{cvparagraph}
+
+
+
+
+
+\cvsection{Relevant skills}
+
+\begin{cvparagraph}
+\textbf{Code}: Python, Sage, \LaTeX, Java, C\#, ASP.NET, and C.
+\end{cvparagraph}
+
+
+
+
+
+\cvsection{Reference}
+
+\begin{cvparagraph}
+\textbf{Ravi Ramakrishna}, Chair of Cornell University Mathematics Department, 
+(+1) 607.257.6972, \href{mailto:ravi@math.cornell.edu}{ravi@math.cornell.edu}.
+\end{cvparagraph}
 
 
 
