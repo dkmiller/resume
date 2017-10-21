@@ -2,10 +2,10 @@
 
 \documentclass[11pt, letterpaper]{awesome-cv}
 \geometry{
-	left     = 1.4cm,
-	top      = 1.4cm,
-	right    = 1.4cm,
-	bottom   = 1.4cm,
+	left = 1.4cm,
+	top = 1.4cm,
+	right = 1.4cm,
+	bottom = 1.4cm,
 	footskip = 0.5cm
 }
 \fontdir[fonts/]
@@ -14,7 +14,7 @@
 \colorlet{awesome}{black}
 
 \name{}{DANIEL MILLER}
-\mobile{402.512.4475} 
+\mobile{+1 (402) 512-4475} 
 \email{daniel.keegan.miller@gmail.com}
 \linkedin{daniel-miller}
 
@@ -28,11 +28,54 @@
 \cvsection{Summary}
 
 \begin{cvparagraph}
-Math Ph.D.~candidate about to join Microsoft's \href{http://www.exp-platform.com/Pages/default.aspx}{Analysis and Experimentation} team as a data scientist. 
+Data scientist working with Microsoft's \href{http://www.exp-platform.com/Pages/default.aspx}{Analysis and Experimentation} team. 
+Team does internal A/B-testing consulting. 
+Extract, transform, load, and analize large data sets, data pipelines, statistical rigor. 
 Have experience developing scalable algorithms in a team environment, visualizing complex data, and communicating ideas to a diverse audience.
-Have constructed sophisticated multidimensional objects and analyzed their statistical properties, and also led the creation of a lightweight, distributed, cloud-hosted website. 
 Interested in leveraging mathematical skills to glean business insights from real-world data sets in a fast-paced, collaborative environment. 
 \end{cvparagraph}
+
+
+
+
+
+\cvsection{Experience}
+
+\begin{cventries}
+
+\cventry
+	{Data scientist, Microsoft}
+	{}{}
+	{June 2012--present}
+	{
+		\begin{cvitems}
+			\item{MUID-Query sensitivity analysis?}
+			\item{SLAPI cleanup? Worked with Bing.}
+			\item{Information gains? Analyzed correlation between results of short and long experiments, leading to greater agility and cost savings.}
+			\item{Maps Overlay?}
+		\end{cvitems}
+	}
+
+\cventry
+	{Ph.D.~Research, Cornell University}
+	{}{}
+	{August 2013--May 2017}
+	{
+		\begin{cvitems}
+			\item{Proved precise connections between apparently unconnected topics (discrepancy and Dirichlet series).}
+		\end{cvitems}
+	}
+		
+\cventry
+	{Arizona Winter School, University of Arizona}
+	{}{}
+	{May 2013--2016}
+	{
+		\begin{cvitems}
+			\item{Mastered concepts, ran simulations, and proved theorems in a high-intensity one week program.}
+		\end{cvitems}
+	}
+\end{cventries}
 
 
 
@@ -48,9 +91,7 @@ Interested in leveraging mathematical skills to glean business insights from rea
 	{May 2017}
 	{
 		\begin{cvitems}
-			\item{Managed the creation of a location-centric auction site written in C\# and hosted on Azure.}
-			\item{Achieved 20ms response rate at up to 2K requests per second distributed over 10 servers.}
-			\item{Collaborated in writing a CPU scheduler and gossip-based networking protocol in C.}
+			\item{Thesis: \href{http://doi.org/10.7298/X4PN93Q3}{\emph{Counterexamples related to the Sato--Tate conjecture}}.}
 		\end{cvitems}
 	}
 	
@@ -58,7 +99,11 @@ Interested in leveraging mathematical skills to glean business insights from rea
 	{M.S.~in Mathematics, Cornell University}
 	{}{}
 	{May 2017}
-	{}
+	{
+		\begin{cvitems}
+			\item{Completed graduate-level coursework in Mathematics and Computer Science.}
+		\end{cvitems}
+	}
 	
 \cventry
 	{B.S.~in Mathematics, University of Nebraska Omaha}
@@ -67,56 +112,9 @@ Interested in leveraging mathematical skills to glean business insights from rea
 	{
 		\begin{cvitems}
 			\item{Minored in Computer Science, graduated \emph{summa cum laude}, GPA 4.0.}
-			\item{Dean's List all semesters, Highest Honors in Mathematics, with senior thesis.}
-			\item{Designed and wrote a compiler for a C-family programming language in Standard ML.}
 		\end{cvitems}
 	}
 	
-\end{cventries}
-
-
-
-
-
-\cvsection{Research}
-
-\begin{cventries}
-
-\cventry
-	{Ph.D.~Research, Cornell University}
-	{}{}
-	{August 2013--May 2017}
-	{
-		\begin{cvitems}
-			\item{Developed and implemented new algorithms for computing statistical fitness of large data sets.}
-			\item{Discovered mathematical application of previously unused techniques for numerical integration.}
-			\item{Proved precise connections between apparently unconnected topics (discrepancy and Dirichlet series).}
-			\item{Demonstrated computability of ``torsion classes,'' a highly abstract theoretical construct.}
-		\end{cvitems}
-	}
-		
-\cventry
-	{Arizona Winter School, University of Arizona}
-	{}{}
-	{May 2013--2016}
-	{
-		\begin{cvitems}
-			\item{Mastered concepts, ran simulations, and proved theorems in a high-intensity one week program.}
-			\item{Collaborated with a diverse team to develop and present new mathematics quickly.}
-		\end{cvitems}
-	}
-	
-\cventry
-	{Summer Mathematics Institute, Cornell University}
-	{}{}
-	{Summer 2011}
-	{
-		\begin{cvitems}
-			\item{Created and visualized a high-dimensional example that disproved a conjecture.}
-			\item{Coauthored \href{http://dx.doi.org/10.1016/j.topol.2011.11.041}{\emph{Strongly non-embeddable metric spaces}}. Topology Appl.~\textbf{159} (2012), no.3, 749--755.}
-			\item{Coauthored \href{http://dx.doi.org/10.1016/j.jmaa.2014.01.063}{\emph{Polygonal equalities and virtual degeneracy in L\textsubscript{p} spaces}}. J.~Math.~Anal.~Appl.~\textbf{415} (2014), no.1, 247--268.}
-		\end{cvitems}
-	}
 \end{cventries}
 
 
@@ -139,14 +137,21 @@ Assisted in teaching mathematics at undergraduate and graduate levels.
 \cvsection{Skills}
 
 \begin{cvparagraph}
-\textbf{Programming:} C\#, R, Python, Java, ASP.NET, C, and \LaTeX.
+\textbf{Programming:} C\#, R, Python, F\#, PowerShell, Scala, C, Java, and \LaTeX.
+
+\textbf{Big Data:}
+\href{https://docs.microsoft.com/en-us/azure/cosmos-db/introduction}{Microsoft Cosmos}, 
+\href{https://doi.org/10.14778/1454159.1454166}{U-SQL} (Scope),
+SQL,
+Spark,
+\href{https://docs.loganalytics.io/docs/Language-Reference}{Microsoft Analytics} (Kusto),
+and 
+\href{https://github.com/spotify/luigi}{Luigi}.
 
 \textbf{Web:} 
 \href{https://azure.microsoft.com/}{Azure}, 
 \href{https://aws.amazon.com/}{Amazon Web Services} (AWS), 
-HTML, 
-CSS, and 
-\href{http://vsync.codeplex.com/}{Vsync}.
+HTML, and CSS.
 \end{cvparagraph}
 
 
