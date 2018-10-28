@@ -1,12 +1,14 @@
 sudo: required
 services: docker
-# Follow: https://github.com/PHPirates/travis-ci-latex-pdf#tectonic
+# Follow: https://github.com/PHPirates/travis-ci-latex-pdf
 script:
   - docker pull dxjoke/tectonic-docker
   - docker run --mount src=$TRAVIS_BUILD_DIR,target=/usr/src/tex,type=bind dxjoke/tectonic-docker /bin/sh -c "tectonic Daniel-Miller-resume.tex"
 deploy:
   provider: releases
   api_key: $GITHUB_OAUTH_TOKEN
+  file:
+    - Daniel-Miller-resume.pdf
   skip_cleanup: true
   on:
     tags: true
