@@ -4,8 +4,6 @@ on:
   push:
     branches:
     - master
-    # TODO: remove this.
-    - dkmiller-update
   pull_request:
     branches:
     - master
@@ -30,5 +28,4 @@ jobs:
         asset_name: Daniel-Miller-resume.pdf
         tag: ${{ github.ref }}
         overwrite: true
-      # TODO: add this in.
-      # if: github.ref == 'refs/heads/master'
+      if: github.ref == 'refs/heads/master'
