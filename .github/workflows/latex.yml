@@ -1,0 +1,31 @@
+name: latex
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: dxjoke/tectonic-docker
+    steps:
+
+    - uses: actions/checkout@v2
+
+    - name: latex
+      run: /bin/sh -c "tectonic Daniel-Miller-resume.tex"
+
+    # https://github.com/marketplace/actions/upload-files-to-a-github-release
+    - name: Upload binaries to release
+      uses: svenstaro/upload-release-action@v1-release
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        file: Daniel-Miller-resume.pdf
+        asset_name: Daniel-Miller-resume.pdf
+        tag: ${{ github.ref }}
+        overwrite: true
+      if: github.ref == 'refs/heads/master'
