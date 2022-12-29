@@ -1,8 +1,3 @@
-## Core latex/pdflatex auxiliary files:
-*.aux
-*.log
-*.out
-*.pdf
-*.synctex.gz
-*.fdb_latexmk
-.fls
+# https://stackoverflow.com/a/24678813
+Daniel-Miller-*
+!Daniel-Miller-resume.tex
