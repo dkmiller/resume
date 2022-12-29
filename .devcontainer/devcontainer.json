@@ -1,0 +1,38 @@
+{
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "James-Yu.latex-workshop"
+            ],
+            "settings": {
+                "latex-workshop.latex.tools": [
+                    {
+                        "name": "xelatex",
+                        "command": "xelatex",
+                        "args": [
+                            "-synctex=1",
+                            "-interaction=nonstopmode",
+                            "-file-line-error",
+                            "-xelatex",
+                            "-outdir=%OUTDIR%",
+                            "%DOC%"
+                        ],
+                        "env": {}
+                    }
+                ],
+                "latex-workshop.latex.recipes": [
+                    {
+                        "name": "xelatex",
+                        "tools": [
+                            "xelatex",
+                            "xelatex"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}
