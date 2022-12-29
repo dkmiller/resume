@@ -31,6 +31,6 @@ jobs:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         file: Daniel-Miller-resume.pdf
         asset_name: Daniel-Miller-resume.pdf
-        tag: ${{ github.sha }}
+        tag: ${{ github.run_number }}
         overwrite: true
       if: github.ref == 'refs/heads/master'
